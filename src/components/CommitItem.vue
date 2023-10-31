@@ -1,8 +1,10 @@
 <template>
-  <div>
-    <div>{{truncate(sha)}}</div>
-    <div>{{commit.author.name}}</div>
-    <div>{{formatDate(commit.author.date)}}</div>
+  <div class="mt-3">
+    <div class="flex gap-x-2">
+      <div>{{truncate(sha)}}</div>
+      <div> By {{commit.author.name}}</div>
+      <div> at {{formatDate(commit.author.date)}}</div>
+    </div>
     <div>{{commit.message}}</div>
   </div>
 </template>
